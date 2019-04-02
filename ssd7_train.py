@@ -74,12 +74,12 @@ train_dataset = BatchGenerator(box_output_format=['class_id', 'xmin', 'ymin', 'x
 val_dataset = BatchGenerator(box_output_format=['class_id', 'xmin', 'ymin', 'xmax', 'ymax'])
 
 
-train_images_dir      = '/home/quest/udacity_driving_datasets'
-train_labels_filename = '/home/quest/udacity_driving_datasets/ssd_train.csv'
+train_images_dir      = '/home/udacity_driving_datasets'
+train_labels_filename = '/home/udacity_driving_datasets/ssd_train.csv'
 
 
-val_images_dir      = '/home/quest/udacity_driving_datasets'
-val_labels_filename = '/home/quest/udacity_driving_datasets/ssd_val.csv'
+val_images_dir      = '/home/udacity_driving_datasets'
+val_labels_filename = '/home/udacity_driving_datasets/ssd_val.csv'
 
 train_dataset.parse_csv(images_dir=train_images_dir,
                         labels_filename=train_labels_filename,
