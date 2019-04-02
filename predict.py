@@ -32,7 +32,7 @@ normalize_coords = False
 
 
 # TODO: Set the path to the `.h5` file of the model to be loaded.
-model_path = '/home/quest/ssd_keras/Model/model5/ssd7.h5'
+model_path = '/home/ssd_keras/Model/model5/ssd7.h5'
 
 # We need to create an SSDLoss object in order to pass that to the model loader.
 ssd_loss = SSDLoss(neg_pos_ratio=3, n_neg_min=0, alpha=1.0)
@@ -47,7 +47,7 @@ input_images = [] # Store resized versions of the images here.
 
 
 # We'll only load one image in this example.
-img_path = '/home/quest/Pictures/1478020538206752108.jpg'
+img_path = '/home/Pictures/1478020538206752108.jpg'
 
 orig_images.append(imread(img_path))
 img = image.load_img(img_path, target_size=(img_height, img_width))
