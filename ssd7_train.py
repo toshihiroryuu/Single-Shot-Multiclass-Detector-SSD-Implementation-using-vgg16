@@ -59,7 +59,7 @@ ssd_loss = SSDLoss(neg_pos_ratio=3, n_neg_min=0, alpha=1.0)                     
 model.compile(optimizer=adam, loss=ssd_loss.compute_loss)                      #create model
 
 # TODO: Set the path to the `.h5` file of the model to be loaded.
-model_path = '/home/quest/ssd_keras/ssd7.h5'
+model_path = '/home/ssd_keras/ssd7.h5'
 
 # We need to create an SSDLoss object in order to pass that to the model loader.
 ssd_loss = SSDLoss(neg_pos_ratio=3, n_neg_min=0, alpha=1.0)
